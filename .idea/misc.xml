@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Stefan/AndroidStudioProjects/GoogleAuthApp/app/src/main/res/drawable-night/ic_placeholder.xml" value="0.117" />
+        <entry key="..\:/Users/Stefan/AndroidStudioProjects/GoogleAuthApp/app/src/main/res/drawable-night/ic_placeholder_dark.xml" value="0.1225" />
+        <entry key="..\:/Users/Stefan/AndroidStudioProjects/GoogleAuthApp/app/src/main/res/drawable/ic_google_logo.xml" value="0.1225" />
+        <entry key="..\:/Users/Stefan/AndroidStudioProjects/GoogleAuthApp/app/src/main/res/drawable/ic_placeholder.xml" value="0.1225" />
+        <entry key="..\:/Users/Stefan/AndroidStudioProjects/GoogleAuthApp/app/src/main/res/drawable/ic_save.xml" value="0.1225" />
+        <entry key="..\:/Users/Stefan/AndroidStudioProjects/GoogleAuthApp/app/src/main/res/drawable/ic_vertical_menu.xml" value="0.1225" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
