@@ -6,7 +6,6 @@ import androidx.compose.animation.expandVertically
 import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.Divider
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
@@ -91,7 +90,7 @@ fun Message(
             contentDescription = "Message Bar Icon",
             tint = Color.White
         )
-        Divider(modifier = Modifier.width(12.dp), color = Color.Transparent)
+        Spacer(modifier = Modifier.width(12.dp))
         Text(
             text =
             if (messageBarState.error != null) errorMessage
