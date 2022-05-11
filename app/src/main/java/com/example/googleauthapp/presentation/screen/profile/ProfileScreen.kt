@@ -1,5 +1,6 @@
 package com.example.googleauthapp.presentation.screen.profile
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
@@ -18,6 +19,7 @@ import com.example.googleauthapp.util.RequestState
 import com.google.android.gms.auth.api.identity.Identity
 import retrofit2.HttpException
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @ExperimentalCoilApi
 @Composable
 fun ProfileScreen(

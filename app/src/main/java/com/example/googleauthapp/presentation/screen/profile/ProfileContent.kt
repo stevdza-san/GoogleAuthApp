@@ -1,8 +1,6 @@
 package com.example.googleauthapp.presentation.screen.profile
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.LinearProgressIndicator
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.OutlinedTextField
@@ -10,10 +8,12 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.clip
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import coil.annotation.ExperimentalCoilApi
-import coil.compose.rememberImagePainter
+import coil.compose.AsyncImage
+import coil.request.ImageRequest
+import coil.transform.CircleCropTransformation
 import com.example.googleauthapp.R
 import com.example.googleauthapp.component.GoogleButton
 import com.example.googleauthapp.component.MessageBar
@@ -81,17 +81,13 @@ private fun CentralContent(
     profilePhoto: String?,
     onSignOutClicked: () -> Unit
 ) {
-    val painter = rememberImagePainter(data = profilePhoto) {
-        crossfade(1000)
-        placeholder(R.drawable.ic_placeholder)
-    }
-
-    Image(
-        modifier = Modifier
-            .padding(bottom = 40.dp)
-            .size(150.dp)
-            .clip(CircleShape),
-        painter = painter,
+    AsyncImage(
+        model = ImageRequest.Builder(LocalContext.current)
+            .data(data = profilePhoto)
+            .crossfade(durationMillis = 1000)
+            .placeholder(drawableResId = R.drawable.ic_placeholder)
+            .transformations(CircleCropTransformation())
+            .build(),
         contentDescription = "Profile Photo"
     )
     OutlinedTextField(

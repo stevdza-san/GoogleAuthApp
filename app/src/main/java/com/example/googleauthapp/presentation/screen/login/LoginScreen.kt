@@ -1,5 +1,6 @@
 package com.example.googleauthapp.presentation.screen.login
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.util.Log
 import androidx.compose.material.Scaffold
@@ -16,6 +17,7 @@ import com.example.googleauthapp.presentation.screen.common.StartActivityForResu
 import com.example.googleauthapp.presentation.screen.common.signIn
 import com.example.googleauthapp.util.RequestState
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun LoginScreen(
     navController: NavHostController,
