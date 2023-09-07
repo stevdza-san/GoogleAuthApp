@@ -1,6 +1,6 @@
 # Secure User Authentication | Android + Ktor Server + MongoDB
 
-<p>
+<p align="center">
   <a href="https://stevdza-san.com/p/authentication-android-ktor-mongo-db" align="center">Online Course</a>
 </p>
 <p align="center">
