@@ -13,7 +13,6 @@ import com.example.googleauthapp.domain.repository.Repository
 import com.example.googleauthapp.util.RequestState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
